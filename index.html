@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Logistic</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="wrapper">
+			<div class="forms-wrapper">
+				<div class="input-form">
+					<form action="php/index.php" type="post" class="flex-form">
+						<input id="store1" type="text" list="input-stores" placeholder="Склад">
+						<datalist id="input-stores">
+							<option value="Склад1"></option>
+							<option value="Склад2"></option>
+							<option value="Склад3"></option>
+							<option value="Склад4"></option>
+						</datalist>
+						<input id="vendor1" type="text" list="input-vendors" placeholder="Поставщик">
+						<datalist id="input-vendors">
+							<option value="Экском"></option>
+							<option value="Магнит"></option>
+							<option value="Марс"></option>
+							<option value="Стигия"></option>
+						</datalist>
+
+						<button id="btn1" type="button">Принять</button>
+					</form>
+				</div>
+				<!-- <div class="copy-form"></div> -->
+			</div>
+			<div class="calendar-wrapper">
+				<div class="calendar">
+					<div id="datepicker"></div>
+					<input type="hidden" id="datepicker_value" value="">
+					<!-- <input type="text" id="datepicker"> -->
+				</div>
+				<div class="input-wrapper">
+					<form action="">
+						<input id="start" type="text" placeholder="Нач. ЧЧ:ММ">
+						<input id="end" type="text" placeholder="Конец ЧЧ:ММ">
+						<input id="shipdays" type="text" placeholder="Доставка дни">
+						<button>Принять</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <script>
+		$(function () {
+			$("#datepicker").datepicker();
+		});
+	</script> -->
+	<script src="js/server.js"></script>
+	<script src="js/calendar.js"></script>
+</body>
+
+</html>
